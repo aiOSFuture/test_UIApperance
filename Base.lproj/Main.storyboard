@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9M9-7Q-a5p">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9M9-7Q-a5p">
                                 <rect key="frame" x="218" y="478" width="165" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="6xb-db-c9E"/>
+                                    <constraint firstAttribute="height" constant="28" id="osm-cL-wgc"/>
+                                </constraints>
                                 <segments>
                                     <segment title="红"/>
                                     <segment title="蓝"/>
@@ -30,6 +34,10 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9M9-7Q-a5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e44-Dr-avI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9M9-7Q-a5p" secondAttribute="bottom" constant="94" id="tIA-Xz-xzE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="segemt" destination="9M9-7Q-a5p" id="M6q-t7-raN"/>
